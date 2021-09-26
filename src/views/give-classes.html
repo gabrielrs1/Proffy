@@ -29,7 +29,7 @@
         </header>
 
         <main>
-            <form action="/save-classes" id="create-class" method="POST">
+            <form action="/save-classes" id="create-class" name="form" method="POST">
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -42,7 +42,7 @@
                         <input name="avatar" id="avatar" type="url" required>
                     </div>
                     <div class="input-block">
-                        <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
+                        <label for="whatsapp">Whatsapp <small>(somente números e com DDD)</small></label>
                         <input name="whatsapp" id="whatsapp" type="number" required>
                     </div>
                     <div class="textarea-block">
@@ -109,11 +109,12 @@
                     Importante! <br>
                     Preencha todos os dados
                 </p>
-                <button type="submit" form="create-class">Salvar cadastro</button>
+                <button type="submit" form="create-class" onclick="validation()">Salvar cadastro</button>
             </footer>
         </main>
     </div>
 
     <script src="/scripts/addField.js"></script>
+    <script src="/scripts/validate.js"></script>
 </body>
 </html>
