@@ -4,6 +4,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "cypress": "^15.4.0",
     "express": "^5.1.0",
     "nunjucks": "^3.2.4",
     "sqlite": "^5.1.1",
